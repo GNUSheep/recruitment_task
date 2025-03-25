@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+		<title>Zadanie nr 1</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+         
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    
+    <body>
+        <div id="content">
+            <div class="input_prompt">
+                <div class="centered">
+                    <h1>Word Shuffle</h1>
+
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input class="upload_file" type="file" name="inputed_file">
+                        <br>
+                        <button class="submit" type="submit">Shuffle!</button>
+                    </form>
+
+                </div>            
+            </div>  
+        </div>
+    </body>
+</html>

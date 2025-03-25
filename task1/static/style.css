@@ -1,0 +1,77 @@
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  background-color: #002b36;
+  color: #eee8d5;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+}
+
+.input_prompt {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+.upload_file {
+  outline: none;
+  border: none;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+  align: center;
+}
+
+.submit {
+  margin-top: 10%;
+  outline: none;
+  border: none;
+  background-color: #7d3cff;
+  padding: 1vw 2vw;
+  color: #eee8d5;
+  font-size: 1vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.output_viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.file_content {
+  width: 100%;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 1%;
+  overflow-y: auto;
+  font-size: 1vw;
+  white-space: pre-wrap;
+}
+
+p {
+  font-size: 3vw;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
